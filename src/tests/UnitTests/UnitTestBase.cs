@@ -15,7 +15,7 @@ namespace UnitTests
                 expectedMessage = string.Format(expectedMessage, formattingArgs);
 
             Assert.Equal(ParamName, ex.ParamName);
-            Assert.Contains(expectedMessage + "\r\nParameter name: test", ex.Message);
+            Assert.Contains(expectedMessage + Environment.NewLine + "Parameter name: test", ex.Message);
         }
 
         protected static void ShouldThrow<TEx>(string expectedMessage, params Action[] actions) where TEx : ArgumentException
