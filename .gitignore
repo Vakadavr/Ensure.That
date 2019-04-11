@@ -11,8 +11,6 @@
 *.vssscc
 *.suo
 *.cache
-project.lock.json
-packages/
 
 # deploy
 [Aa]rtifacts/
