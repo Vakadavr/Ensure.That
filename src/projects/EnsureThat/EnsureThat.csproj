@@ -2,17 +2,19 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.1;netstandard2.0</TargetFrameworks>
-    <PackageId>Ensure.That</PackageId>
     <Title>Ensure.That</Title>
+    <Description>Argument validation made simple and unified. It ensures arguments conforms to simple validation rules and provides an uniformed exception throwing strategy if arguments are invalid.</Description>
+    <PackageId>Ensure.That</PackageId>    
     <PackageTags>ensure that argument validation guard clause contracts</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>https://github.com/danielwertheim/ensure.that/blob/master/ReleaseNotes.md</PackageReleaseNotes>
     <AssemblyName>Ensure.That</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>1701;1702;1705;1591</NoWarn>
     <DocumentationFile Condition="'$(TargetFramework)'=='netstandard1.1'">bin\Release\netstandard1.1\Ensure.That.xml</DocumentationFile>
     <DocumentationFile Condition="'$(TargetFramework)'=='netstandard2.0'">bin\Release\netstandard2.0\Ensure.That.xml</DocumentationFile>
+    <NoWarn>1701;1702;1705;1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
